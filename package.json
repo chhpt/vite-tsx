@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "start": "yarn dev & wait-on tcp:3000 -v"
+    "build": "vite build"
   },
   "dependencies": {
     "vue": "~3.0.4",
