@@ -5,10 +5,9 @@ import { createStore, Store as VuexStore, CommitOptions, DispatchOptions } from 
 import { mutations, Mutations, Mutation } from './mutations'
 import { actions, Actions, Action } from './actions'
 import { getters, Getters } from './getters'
-import { state } from './state'
-import type { State } from './state'
+import { state, State } from './state'
 
-export const key: InjectionKey<VuexStore<State>> = Symbol()
+export const key: InjectionKey<VuexStore<State>> = Symbol('store')
 
 export const store = createStore({
   state,
