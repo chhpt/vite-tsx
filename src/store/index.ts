@@ -5,7 +5,9 @@ import { createStore, Store as VuexStore, CommitOptions, DispatchOptions } from 
 import { mutations, Mutations, Mutation } from './mutations'
 import { actions, Actions, Action } from './actions'
 import { getters, Getters } from './getters'
-import { state, State } from './state'
+import { state } from './state'
+// eslint-disable-next-line no-duplicate-imports
+import type { State } from './state'
 
 export const key: InjectionKey<VuexStore<State>> = Symbol('store')
 
