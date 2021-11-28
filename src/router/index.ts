@@ -20,6 +20,15 @@ export const routes: Array<RouteRecordRaw> = [
     },
     children: [],
   },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: () => import(/* webpackChunkName: "about" */ '@/components/Todo.vue'),
+    meta: {
+      title: 'Todo',
+    },
+    children: [],
+  },
 ]
 
 const router = createRouter({

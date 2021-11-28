@@ -1,7 +1,8 @@
 declare module '*.vue' {
-  import { Component } from 'vue'
-  const _default: Component
-  export default _default
+  import { DefineComponent } from 'vue'
+  // eslint-disable-next-line
+  const component: DefineComponent<{}, {}, any>
+  export default component
 }
 
 declare const _APP_VERSION: string

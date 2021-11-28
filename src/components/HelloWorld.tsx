@@ -6,15 +6,12 @@ const HelloWorld = defineComponent({
   },
   setup() {
     const count = ref(0)
+    const increment = () => count.value++
 
     return {
       count,
+      increment,
     }
-  },
-  methods: {
-    increment() {
-      this.count++
-    },
   },
   render() {
     const { count, increment } = this
